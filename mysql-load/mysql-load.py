@@ -1,7 +1,7 @@
 import mysql.connector
 import time
 
-time.sleep(60)
+time.sleep(90)
 
 mydb = mysql.connector.connect(
   host="localhost",
