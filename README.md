@@ -25,4 +25,6 @@ The project starts by deploying a MySQL Database container using the MySQL paren
 
 ![Diagram to visualize Pipeline Logic](mysql-csv-import.png?raw=true "Data Pipeline Logic")
 
+![database-screenshot](database-screenshot.png?raw=true "database-screenshot")
+
 * Successfully processed summary_output.json file can be found in ./mysql/resources/data/summary_output.json 
