@@ -1,0 +1,15 @@
+version: "1.0"
+services:
+  mysql:
+    build: ./mysql
+    container_name: mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - "./mysql/resources/data:/var/lib/mysql-files/"
+  mysqlload:
+    build: ./mysql-load
+    network_mode: "host"
+    container_name: mysql-load
+    depends_on:
+      - mysql
