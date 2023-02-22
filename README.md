@@ -1,4 +1,4 @@
-# MYSQL CSV IMPORT
+# MySQL CSV Import
 
 This section of the repository contains the resources and code to load the CSV files provided. The pipeline will then produce a summary of the database to summary_output.json file.
 Docker was used in this project.
@@ -20,7 +20,7 @@ Docker was used in this project.
 # Extra
 Diagram to visualize Pipeline Logic.
 
-The projects starts by deploying a MySQL Database container using the MySQL parent image from Docker. It then creates the necessary schema from the CSV files provided. The python service will then load the CSV data into the MySQL Database and outputs the output_summary.json file using SQL query in ./mysql-load/resources/sample_output.sql.
+The project starts by deploying a MySQL Database container using the MySQL parent image from Docker. It then creates the necessary schema from the CSV files provided. The python service will then load the CSV data into the MySQL Database and outputs the output_summary.json file using SQL query in ./mysql-load/resources/sample_output.sql.
 
 
 ![Diagram to visualize Pipeline Logic](mysql-csv-import.png?raw=true "Data Pipeline Logic")
